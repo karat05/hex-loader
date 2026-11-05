@@ -7,11 +7,11 @@ func TestBoardInfoStruct(t *testing.T) {
 		Port: "/dev/ttyUSB0",
 		FQBN: "arduino:avr:uno",
 	}
-	
+
 	if board.Port != "/dev/ttyUSB0" {
 		t.Errorf("Expected port /dev/ttyUSB0, got %s", board.Port)
 	}
-	
+
 	if board.FQBN != "arduino:avr:uno" {
 		t.Errorf("Expected FQBN arduino:avr:uno, got %s", board.FQBN)
 	}
